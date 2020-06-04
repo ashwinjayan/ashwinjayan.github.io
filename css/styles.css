@@ -1,0 +1,63 @@
+/* body and .text are NOT required for the blinking cursor. */
+
+body {
+    background: black;
+    font-family: 'Roboto Mono';
+    color: white;
+}
+
+.text {
+    position: relative;
+    display: flex;
+    line-height: 30px;
+    font-size: 30px;
+    min-width: 360px;
+}
+
+.text::after {
+    content: "";
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    float: right;
+    /* Remove display: inline-block if not required to be on the same line as text etc */
+    display: flex;
+    background-color: #606060;
+    vertical-align: top;
+    width: 15px;
+    /* Set height to the line height of .text */
+    height: 30px;
+    /* 
+  Animation paramaters:
+  blink = animation-name, 
+  1s = animation-duration, 
+  step-end = animation-timing-function,
+  infinite = animation-iteration-count
+  */
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
