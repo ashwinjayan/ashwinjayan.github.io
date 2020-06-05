@@ -1,28 +1,18 @@
 /* body and .text are NOT required for the blinking cursor. */
 
 body {
-    background: black;
     font-family: 'Roboto Mono';
-    color: white;
+    margin: 0;
+    font-size: 20px;
 }
 
-.text {
-    position: relative;
-    display: flex;
-    line-height: 30px;
-    font-size: 30px;
-    min-width: 360px;
-}
-
-.text::after {
+.title::after {
     content: "";
     position: relative;
-    top: 0;
-    margin-left: 10px;
-    float: right;
+    top: 5px;
     /* Remove display: inline-block if not required to be on the same line as text etc */
-    display: flex;
-    background-color: #606060;
+    display: inline-block;
+    background-color: #777777;
     vertical-align: top;
     width: 15px;
     /* Set height to the line height of .text */
