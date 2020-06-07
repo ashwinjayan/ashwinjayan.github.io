@@ -1,15 +1,36 @@
 /* body and .text are NOT required for the blinking cursor. */
+html {
+    font-size: 15px;
+}
+
 
 body {
     font-family: 'Roboto Mono';
     margin: 0;
-    font-size: 20px;
     background-color: black;
     color: white;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 200px;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-links {
+    display: flexbox;
+}
+
 .title {
     font-size: 2rem;
+    padding-top: 10%;
 }
 
 .title::after {
