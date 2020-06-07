@@ -30,7 +30,7 @@ a {
 
 .title {
     font-size: 2rem;
-    padding-top: 10%;
+    padding-top: 20%;
 }
 
 .title::after {
@@ -43,7 +43,7 @@ a {
     vertical-align: top;
     width: 15px;
     /* Set height to the line height of .text */
-    height: 30px;
+    height: 2rem;
     /* 
   Animation paramaters:
   blink = animation-name, 
