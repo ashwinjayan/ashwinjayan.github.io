@@ -7,11 +7,15 @@ html {
 body {
     font-family: 'Roboto Mono', sans-serif;
     margin: 0;
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: #4B79A1;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     word-spacing: 0.05rem;
-    text-shadow: 1px 1px 5px grey;
+    /* text-shadow: 1px 1px 5px grey; */
 }
 
 a {
@@ -117,9 +121,9 @@ li {
     color: #0E76A8;
 }
 
-.svg-inline--fa {
+/* .svg-inline--fa {
     filter: drop-shadow(1px 1px 2px grey);
-}
+} */
 
 /* .projects {
     background-color: white;
