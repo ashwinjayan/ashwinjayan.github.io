@@ -1,3 +1,3 @@
-# aj.github.io
+# ashwinjayan.github.io
 
 Portfolio website.
